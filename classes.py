@@ -6,7 +6,7 @@ class Employee(object) :
         self.rate=rate
         Employee.numEmployee += 1
 
-    def del   (self):
+    def del (self):
         Employee.numEmployee-=1
 
     def hours (self,numHours):
@@ -16,3 +16,15 @@ class Employee(object) :
     def pay(self):
         self.owed=0
         return("payed %s" % self.name)
+
+emp1 =Employee("Jill", 18.50)
+
+emp2 =Employee("Jack", 15.50)
+
+Employee.numEmployee
+
+emp1.hours(20)
+
+emp1.owed
+
+Emp1.pay()
