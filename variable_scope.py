@@ -81,3 +81,24 @@ print([f1 (x) for x in range(64) if x in [f2(j) for j in range(16)]])
 
 list1= [[1,2,3], [4,5,6]]
 [i*j for i in list1[0] for j in list1[1]]
+
+words = 'here is a sentence'.split()
+
+[[word, len(word)] for word in words]
+
+
+#Functions as first Class objects
+def greeting(language):
+    if language=='eng':
+        return 'hello word'
+        if language =='fr':
+         return 'bonjour le monde'
+    else: return 'language not supported'
+
+l=[greeting('eng'), greeting('fr'), greeting('ger')]
+l[1]
+ def callf(f):
+     lang='eng'
+     return(f(lang))
+
+callf(greeting)
