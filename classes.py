@@ -18,10 +18,6 @@ class Employee(object):
         return("payed %s" % self.name)
 
 
-
-
-
-
 emp1=Employee("Jill", 18.50)
 
 emp2=Employee("Jack", 15.50)
@@ -33,3 +29,16 @@ emp1.hours(20)
 emp1.owed
 
 emp1.pay()
+
+
+#Special objects
+class My_Class():
+  def__init__(self,greet)
+  self.greet=greet
+
+  def__repr_(self)
+return 'a custom object (%r) ' % (self.greet)
+
+a=my_class('giday')
+
+a
