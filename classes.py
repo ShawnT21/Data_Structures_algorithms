@@ -33,12 +33,12 @@ emp1.pay()
 
 #Special objects
 class My_Class():
-  def__init__(self,greet)
-  self.greet=greet
+  def __init__(self,greet):
+      self.greet=greet
 
-  def__repr_(self)
-return 'a custom object (%r) ' % (self.greet)
+  def __repr__(self):
+     return 'a custom object (%r) ' % (self.greet)
 
-a=my_class('giday')
+a= My_Class('giday')
 
 a
