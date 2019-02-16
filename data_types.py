@@ -96,3 +96,20 @@ list1.sort()
 list1
 list1.remove(12) #remove value 12 from the list
 list1
+
+#Tuples
+
+t = tuple() #create an empty tuple
+type(t)
+t=('a',) #create a tuple with 1 element
+t
+print('type is', type(t))
+tpl=('a','b','c')
+tpl=('a', 'b', 'c')
+tuple('sequence')
+x,y,z= tpl #multiple assignment
+x
+y
+z
+'a' in tpl #Memebership can be tested
+'z' in tpl 
