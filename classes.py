@@ -30,6 +30,26 @@ emp1.owed
 
 emp1.pay()
 
+class specialEmployee(Employee):
+     def_init_(self,name,rate,bonus)
+        Employee.__init__(self,name,rate)   #calls the base classes
+        self.bonus=bonus
+
+
+     def__hours__(self,numHours):
+       self.owed += numHours*self.rate*2
+       return("%.2f hours worked" % numHours)
+
+#Example issubclass() to check wheter a class is a subclass of another class
+#Example isinstance() to check if an object belongs to a class or not
+
+print(issubclass(specialEmployee,Employee))
+print(issubclass(Employee, specialEmployee))
+
+d = Employee("packt", 20, 100)
+b = Employee("packt", 20)
+print(isinstance(b, specialEmployee))
+print(isinstance(b, Employee))
 
 #Special objects
 class My_Class():
