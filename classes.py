@@ -62,3 +62,26 @@ class My_Class():
 a= My_Class('giday')
 
 a
+
+
+#Class methods
+
+class exponetialA(object):
+    base=3
+    @classmethod
+    def exp(cls,x):
+        return(cls.base**x)
+
+    @staticmethod
+    def addition(x, y):
+        return(x+y)
+class exponetialB(exponetialA):
+    base=4
+
+a = exponetialA()
+b= a.exp(3)
+print("the value: 3 to the power 3 is", b)
+print('The sum is:', exponetialA.addition(15, 10))
+print(exponetialB.exp(3))
+
+#prints the following output
