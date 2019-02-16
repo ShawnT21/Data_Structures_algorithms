@@ -15,3 +15,13 @@ a=7; b=5
 e= b**a # The operator (**)calculates power
 e
 a%b
+
+#Complex numbers
+
+f=3+5j
+print(f, "is of type", type(f))
+f.real
+f.imag
+f*2 #multiplication
+f+3 #addition
+f-1 #subtraction
