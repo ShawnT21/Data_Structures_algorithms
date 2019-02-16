@@ -58,3 +58,17 @@ import fractions
 fractions.Fraction(3,4)
 fractions.Fraction(0.5)
 fractions.Fraction("0.25")
+
+#Memebership, identiy, and logical operations
+
+x=[1,2,3]
+y=[1,2,3]
+x==y #Test equivalence
+x is y #Test object identiy
+x=y #assignment
+x is y
+
+list() # an empty list
+list1 = [1,2,3,4]
+list1.append(1) #append value 1 at the end of the list
+list1
