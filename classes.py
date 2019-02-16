@@ -1,6 +1,6 @@
 class Employee(object):
     numEmployee=0
-    def init  (self,name,rate):
+    def __init__(self,name,rate):
         self.owed =0
         self.name=name
         self.rate=rate
