@@ -10,3 +10,8 @@ d= b//a
 print(d, "is of type", type(d))
 7/5 # true division
 -7//5 # floor division operator
+
+a=7; b=5
+e= b**a # The operator (**)calculates power
+e
+a%b
