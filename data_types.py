@@ -43,6 +43,7 @@ else:
 
 1-0.9
 1-0.9==.1
+#Decimal module
 
 import decimal
 x=decimal.Decimal(3.14)
@@ -50,3 +51,10 @@ y=decimal.Decimal(2.74)
 x*y
 decimal.getcontext().prec=4
 x*y
+
+#Fraction module
+
+import fractions
+fractions.Fraction(3,4)
+fractions.Fraction(0.5)
+fractions.Fraction("0.25")
