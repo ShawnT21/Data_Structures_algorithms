@@ -25,3 +25,28 @@ f.imag
 f*2 #multiplication
 f+3 #addition
 f-1 #subtraction
+
+#Bool types
+
+bool(2)
+bool(-2)
+bool(0)
+
+See_boolean = (4*3 > 10) and (6+5 >= 11)
+print(See_boolean)
+if (See_boolean):
+    print("Boolean expression returned True")
+else:
+    print("Boolean expression returned False")
+
+#Representation error
+
+1-0.9
+1-0.9==.1
+
+import decimal
+x=decimal.Decimal(3.14)
+y=decimal.Decimal(2.74)
+x*y
+decimal.getcontext().prec=4
+x*y
