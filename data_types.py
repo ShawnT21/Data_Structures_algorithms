@@ -72,3 +72,27 @@ list() # an empty list
 list1 = [1,2,3,4]
 list1.append(1) #append value 1 at the end of the list
 list1
+list2 = list1 *2
+[1,2,3,4,1,1,2,3,4,1]
+min(list1)
+
+max(list1)
+
+list1.insert(0,2) #insert an value 2 at index 0
+list1
+
+list1.reverse()
+list1
+
+list2=[11,12]
+list1.extend(list2)
+list1
+
+sum(list1)
+
+len(list1)
+
+list1.sort()
+list1
+list1.remove(12) #remove value 12 from the list
+list1
