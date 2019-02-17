@@ -112,4 +112,26 @@ x
 y
 z
 'a' in tpl #Memebership can be tested
-'z' in tpl 
+'z' in tpl
+
+tup1 = 1,2,3,4,5 #braces are optional
+print("tuple value at index 1 is ", tup1[1])
+print("tuple[1:3] is", tup1[1:3])
+tup12 = (11, 12,13)
+tup13= tup1 +tup12 #tuoke concatenation
+tup13
+tup1*2 #repetition for tuples
+5 in tup1 #memebership test
+
+tup1[-1]  #negative indexing
+
+len(tup1) #length function for tuple
+
+max(tup1)
+
+min(tup1)
+
+tup1[1] = 5 #modification in tuple is not allowed.
+
+print(tup1 == tup12)
+print(tup1>tup12)
