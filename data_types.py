@@ -135,3 +135,48 @@ tup1[1] = 5 #modification in tuple is not allowed.
 
 print(tup1 == tup12)
 print(tup1>tup12)
+
+1= ['one','two']
+x,y = 1
+x,y= y,x
+x,y
+
+#dictionaries
+
+a = {'Monday':1, 'Tuesday':2, 'Wednesday':3} #creates a dictionary
+b =dict({'Monday':1, 'Tuesday':2 , 'Wednesday':3})
+b
+c = dict(zip(['Monday', 'Tuesday', 'Wednesday'], [1,2,3]))
+c={'Monday': 1, 'Tuesday': 2, 'Wednesday': 3}
+d= dict([('Monday',1), ('Tuesday',2), ('Wednesday',3)])
+d
+
+d['Thursday'] =4 #add an item
+d.update({'Friday':5, 'Saturday':6}) #add multiple items
+d
+'Wednesday' in d #Memebership test (only keys)
+5 in d #Memebership do not check in values
+
+dict(zip('packt', range(5)))
+{'p': 0, 'a': 1, 'c': 2, 'k': 3, 't': 4}
+a = dict(zip('packt', range(5)))
+len(a) #length of dictionary a
+
+a['c'] # to check the value of a key
+
+a.pop('a')
+
+a{'p':0, 'c': 2, 'k': 3, 't': 4}
+b= a.copy() #make a copy of the dictionary
+b
+a.keys()
+a.values()
+a.items()
+a.update({'a':1}) # add an item in the dictionary
+a{'p': 0, 'c': 2, 'k': 3, 't': 4, 'a': 1}
+a.update(a=22) #update the value of key 'a'
+a{'p': 0, 'c': 2, 'k': 3, 't': 4, 'a': 22}
+
+#Sorting dictionaries
+d = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5}
+sorted(list(d))
