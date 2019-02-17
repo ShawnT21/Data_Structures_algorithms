@@ -178,5 +178,24 @@ a.update(a=22) #update the value of key 'a'
 a{'p': 0, 'c': 2, 'k': 3, 't': 4, 'a': 22}
 
 #Sorting dictionaries
-d = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5}
+d = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6}
 sorted(list(d))
+
+sorted(list(d.values()))
+
+sorted(list(d), key = d.__getitem__)
+
+[value for (key, value) in sorted(d.items())]
+
+sorted(list(d), key = d.__getitem__ , reverse=True)
+
+d2= {'one': 'uno', 'two':'deux', 'three': 'trois', 'four': 'quatre', 'five':'cinq',
+'six':'six'}
+
+sorted(d2, key=d.__getitem__)
+
+[d2[i] for i in sorted(d2, key=d.__getitem__)]
+def corder(string):
+    return (string[len(string)-1])
+    sorted(d2.values(), key=corder)
+    ['quatre', 'uno', 'cinq', 'trois', 'deux', 'six']
