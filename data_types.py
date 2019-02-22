@@ -377,3 +377,28 @@ def isprimary(c):
         return True
     else:
         return False
+
+#Named Tuples
+
+from collections import namedtuple
+space = namedtuple('space', 'x y z')
+s1= space(x=2.0, y=4.0, z=10) # we can also use space(2.0, 4.0, 10)
+s1
+s1.x * s1.y * s1.z
+
+s1 = [4,5,6]
+space._make(s1)
+#s1._1
+
+s1._asdict()
+s1._replace (x=7, z=9)
+space._fields
+space._fields_defaults
+
+#Arrays
+
+import array
+ba = array.array('i', range(10**6))
+b1 = list(range(10**6))
+import sys
+100*sys.getsizeof(ba)/sys.getsizeof(b1)
