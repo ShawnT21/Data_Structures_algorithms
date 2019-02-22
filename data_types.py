@@ -233,14 +233,39 @@ s1
 s1.clear()
 s1
 
+s1={'ab',3,4,(5,6)}
+s2 ={'ab',7,(7,6)}
+s1-s2 # Same as s1.difference(s2)
+s1.intersection(s2)
+s1.union(s2)
+'ab' in s1
+'ab' not in s1
+for element in s1: print(element)
+#Immutable sets
+s1.add(s2)
+s1.add(frozenset(s2))
+s1
+
+fs1 = frozenset(s1)
+fs2 = frozenset(s2)
+{fs1:'fs1', fs2:'fs2'}
+
 #Deques
+from collections import deque
 
-dq2=deque([], maxlen=3)
-for i in range(6):
-    dq2.append(i)
-    print(dq2)
-
-
+dq = deque('abc') #creates deque (['a','b', 'c'])
+dq.append('d') #adds the value 'd' to the right
+dq.appendleft('z') #adds the value 'z' to the left
+dq.extend('efg') #adds mulitple items to the right
+dq.extendleft('yxw') #adds multiple items to the left
+dq
+dq.pop() #returns and removes an item from the right
+dq.popleft() #returns and removes an item from the left
+dq
+dq.rotate(2) #rotates all items 2 steps to the right
+dq
+dq.rotate(-2) #rotates all items 2 steps to the left
+dq
 import collections
 dict1={'a':1, 'b':2,'c':3}
 dict2={'d':4, 'e':5}
