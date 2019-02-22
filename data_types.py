@@ -266,15 +266,22 @@ dq.rotate(2) #rotates all items 2 steps to the right
 dq
 dq.rotate(-2) #rotates all items 2 steps to the left
 dq
+dq
+list(itertools.islice(dq,3,9))
+dq2=deque([], maxlen=3)
+for i in range(6):
+    dq2.append(i)
+    print(dq2)
+#ChainMaps
+
 import collections
 dict1={'a':1, 'b':2,'c':3}
 dict2={'d':4, 'e':5}
-chainmap=collections.ChainMap(dict1, dict2)
+chainmap=collections.ChainMap(dict1, dict2) #linking two dictionaries
 chainmap
-ChainMap ({'a':1,'b':2,'c':3},{'d':4,'e':5})
+chainmap.maps
 chainmap.values
-<bound method Mapping.values of ChainMap({'a':1,'b':2,'c':3},{'d':4, 'e':5})
-chainmap['b']
+chainmap['b'] #accessing values
 chainmap['e']
 
 from collections import ChainMap
@@ -296,6 +303,15 @@ ChainMap({'theme':'Default', 'language': 'eng', 'showIndex': True, 'showFooter':
 
 
 # Counter object
+from collections import Counter
+ct = Counter() #creates an empty counter object
+ct
+ct.update('abc') # Populates the object
+ct
+ct.update({'a':3}) #update the count of 'a'
+ct
+for item in ct:
+    print('%s: %d' % (item, ct[item]))
 
 from collections import Counter
 Counter('anysequence')
@@ -311,10 +327,11 @@ c3
 Counter({'e':3, 'a': 1, 'c': 1})
 
 #Another way to Counter
-ct
+from collections import Counter
+ct = Counter() #creates an empty counter object
 Counter({'a':5, 'b': 1, 'c':1})
 ct['x']
-ct.update({'a': -3, 'b':-2, 'e';2})
+ct.update({'a': -3, 'b':-2, 'e':2})
 ct
 Counter({'a': 2, 'e': 2, 'c': 1, 'b': -1})
 sorted(ct.element())
@@ -335,3 +352,8 @@ od2['one'] = 1
 od1 ==od2
 od3 = collections.OrderedDict(sorted(od1.items(), key= lambda t:(4*t[1])-t[1]**2))
 od3
+
+kvs = [('three', 3), ('four', 4), ('five', 5)]
+od1.update(kvs)
+od1
+for k, v in od1.items(): print(k,v)
