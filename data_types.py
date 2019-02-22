@@ -357,3 +357,23 @@ kvs = [('three', 3), ('four', 4), ('five', 5)]
 od1.update(kvs)
 od1
 for k, v in od1.items(): print(k,v)
+
+od3 = collections.OrderedDict(sorted(od1.items(), key= lambda t :
+(4*t[1])-t[1]**2))
+od3
+od3.values()
+
+#Defaultdict
+
+from collections import defaultdict
+dd = defaultdict(int)
+words = str.split('red blue green red yellow blue red green green red')
+for word in words: dd[word] +=1
+
+dd
+
+def isprimary(c):
+    if (c=='red') or (c=='blue') or (c=='green'):
+        return True
+    else:
+        return False
