@@ -207,7 +207,31 @@ def wordcount(fname):
         fhand=open(fname)
     except:
         print('File can not be opened')
+        exit()
+    count=dict()
+    for line in fhand:
+        words=line.split()
+        for word in words:
+            if word not in count:
+                count[word]=1
+            else:
+                count[word] +=1
+    return(count)
 
+#sets
+
+s1 = set()
+s1.add(1)
+s1.add(2)
+s1.add(3)
+s1.add(4)
+s1
+s1.remove(4)
+s1
+s1.discard(3)
+s1
+s1.clear()
+s1
 
 #Deques
 
