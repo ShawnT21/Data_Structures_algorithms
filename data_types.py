@@ -199,3 +199,83 @@ def corder(string):
     return (string[len(string)-1])
     sorted(d2.values(), key=corder)
     ['quatre', 'uno', 'cinq', 'trois', 'deux', 'six']
+
+#dictionaries for text analysis
+
+def wordcount(fname):
+    try:
+        fhand=open(fname)
+    except:
+        print('File can not be opened')
+
+
+#Deques
+
+dq2=deque([], maxlen=3)
+for i in range(6):
+    dq2.append(i)
+    print(dq2)
+
+
+import collections
+dict1={'a':1, 'b':2,'c':3}
+dict2={'d':4, 'e':5}
+chainmap=collections.ChainMap(dict1, dict2)
+chainmap
+ChainMap ({'a':1,'b':2,'c':3},{'d':4,'e':5})
+chainmap.values
+<bound method Mapping.values of ChainMap({'a':1,'b':2,'c':3},{'d':4, 'e':5})
+chainmap['b']
+chainmap['e']
+
+from collections import ChainMap
+defaults={'theme':'Default','language':'eng','showIndex':True,}
+'showFooter':True}
+cm= ChainMap(defaults) #creates a chainMap with defaults configuration
+cm.maps[{'theme': 'Default', 'language': 'eng','showIndex':True,
+'showFooter':True}]
+cm.values()
+ValuesView(ChainMap({'theme': 'Default', 'language':'eng', 'showIndex':True, 'showFooter': True}))
+cm2= cm.new_child({'theme':'bluesky'}) #create a new ChainMap with a child that overrides the parent.
+cm2['theme'] #returns the overrides theme 'bluesky'
+cm2.pop('theme') #removes the child theme value 'bluesky'
+cm2['theme']
+'default'
+cm2.maps[{}, 'theme':'Default', 'language': 'eng','showIndex':True,'showFooter':True]
+cm2.parents
+ChainMap({'theme':'Default', 'language': 'eng', 'showIndex': True, 'showFooter':True})
+
+
+# Counter object
+
+from collections import Counter
+Counter('anysequence')
+Counter({'e': 3, 'n': 2, 'a': 1, 'y':1, 's': 1, 'q': 1, 'u': 1, 'c': 1})
+c1 = Counter('amysequence')
+c2 = Counter({'a': 1, 'c': 1, 'e': 3})
+c3 = Counter(a=1, c= 1, e=3)
+c1
+Counter({'e': 3, 'n': 2, 'a': 1, 'y': 1, 's': 1, 'q': 1, 'u': 1, 'c': 1})
+c2
+Counter({'e': 3, 'a': 1, 'c': 1})
+c3
+Counter({'e':3, 'a': 1, 'c': 1})
+
+#Another way to Counter
+ct
+Counter({'a':5, 'b': 1, 'c':1})
+ct['x']
+ct.update({'a': -3, 'b':-2, 'e';2})
+ct
+Counter({'a': 2, 'e': 2, 'c': 1, 'b': -1})
+sorted(ct.element())
+ct.most_common()
+[('a',2), ('e', 2), ('c', 1), ('b', -1)]
+ct.substract({'e':2})
+ct
+Counter({'a':2, 'c':1, 'e': 0, 'b': -1})
+
+#OrderdDict
+import collections
+od3 = collections.OrderedDict(sorted(od1.items(), key= lambda t:(4*t[1])-t[1]**2))
+od3
