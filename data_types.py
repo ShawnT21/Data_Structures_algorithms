@@ -277,5 +277,12 @@ Counter({'a':2, 'c':1, 'e': 0, 'b': -1})
 
 #OrderdDict
 import collections
+od1= collections.OrderedDict()
+od1['one'] = 1
+od1['two'] = 2
+od2 = collections.OrderedDict ()
+od2['two'] = 2
+od2['one'] = 1
+od1 ==od2
 od3 = collections.OrderedDict(sorted(od1.items(), key= lambda t:(4*t[1])-t[1]**2))
 od3
