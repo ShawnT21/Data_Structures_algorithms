@@ -24,7 +24,7 @@ def factorial (n):
         f = n*factorial(n-1)
         print(f)
         return(f)
-        
+
 factorial(4)
 
 # Backtracking
