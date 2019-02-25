@@ -104,3 +104,13 @@ def __mergeSort__ (A):
         k=k+1
 print('merging', A)
 return(A)
+
+mergeSort([356, 97, 846, 215])
+
+import matplotlib.pyplot as plt
+import math
+x = list(range(1,100))
+1 = []; 12 =[]; a=1
+plt.plot(x, [y*y for y in x])
+plt.plot(x, [7*y) *math.log (y,2) for y in x])
+plt.show()
