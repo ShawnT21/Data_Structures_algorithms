@@ -63,3 +63,44 @@ def karatsuba(x,y):
 
 t= karatsuba(1234,3456)
 print(t)
+
+#Merge Sort
+
+def __mergeSort__ (A):
+#Base case if the input is one or zero just return.
+ if len(A) > 1:
+    #splitting input array
+    print('splitting', A)
+    mid=len(A)//2
+    left=A[:mid]
+    right=A[mid:]
+    #recursive calls to mergeSort for left and right subarrays
+    mergeSort (left)
+    mergeSort (right)
+    #initalizes pointers for left (i) right (j) and output array (k)
+    #3 initalization operations
+    i = j = k = 0
+    #Traverse and merges the sorted arrays
+    while i < len(left) and j < len(right) :
+    #if left < right comparasion operation
+        if left[i] < right[j] :
+        #if left < right assignment operation
+            A[k] = left[i]
+            i=i + 1
+        else:
+            #if right <= left assignment
+            a[k] = right[j]
+            j=j+1
+            k=k+1
+    while i< len(left):
+    #assignment operation
+        A[k] = left[i]
+        i=i+1
+        k=k+1
+    while j< len(right):
+    #assignment operation
+        A[k] = right[j]
+        j=j+1
+        k=k+1
+print('merging', A)
+return(A)
